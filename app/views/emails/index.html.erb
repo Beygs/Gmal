@@ -11,7 +11,8 @@
     <% @emails.each do |email| %>
       <%= render(
         partial: 'email',
-        locals: { email: email }
+        locals: { email: email },
+        remote: true
       ) %>
     <% end %>
   </div>

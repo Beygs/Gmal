@@ -1,0 +1,17 @@
+<div class='email'>
+  <h3 class='email__object'><%= email.object %></h3>
+  <p class='email__body'><%= email.body %></p>
+  <div class='email__actions'>
+    <%= link_to(
+      'Supprimer',
+      email_path(email),
+      method: :delete,
+      class: 'btn btn--delete'
+    ) %>
+    <%= link_to(
+      'Marquer comme non-lu',
+      '#',
+      class: 'btn btn--unread'
+    ) %>
+  </div>
+</div>
