@@ -10,7 +10,7 @@ Aïe...
 
 ## ToDo
 
-[x] Initialisation du projet (db & push heroku)
+- [x] Initialisation du projet (db & push heroku)
 - View Index des mails
   - [x] Html
   - [ ] CSS
