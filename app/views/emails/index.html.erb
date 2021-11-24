@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='actions'>
+    <%= form_with(
+      url: emails_path,
+      method: :post
+    ) do |form| %>
+      <%= form.submit 'Recevoir un email' %>
+    <% end %>
+  </div>
+  <div class='email-list'>
+    <% @emails.each do |email| %>
+      <%= render(
+        partial: 'email',
+        locals: { email: email }
+      ) %>
+    <% end %>
+  </div>
+  <div class='email-viewer'>
+
+  </div>
+</div>
