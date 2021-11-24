@@ -1,24 +1,21 @@
-# README
+# Gmal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Aperçu
 
-Things you may want to cover:
+Aïe...
 
-* Ruby version
+## Live Site
 
-* System dependencies
+[Clique !](https://g-mal.herokuapp.com/)
 
-* Configuration
+## ToDo
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[x] Initialisation du projet (db & push heroku)
+- View Index des mails
+  - [x] Html
+  - [ ] CSS
+- [x] Création de mail
+- [ ] Affichage de mail
+- [ ] Suppression de mail
+- [ ] Email lu / non-lu
+- [ ] Niveau ultime
