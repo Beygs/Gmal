@@ -1,0 +1,16 @@
+document
+  .querySelector("a.email__object[href='/emails/<%= @email.id %>']")
+  .parentNode
+  .classList.toggle('read');
+
+function unreadToggle() {
+  const unreadBtn = document.querySelector('.btn--unread');
+
+  if (unreadBtn.innerText === 'Marquer comme non-lu') {
+    unreadBtn.innerText = 'Marquer comme lu'
+  } else {
+    unreadBtn.innerText = 'Marquer comme non-lu'
+  }
+}
+
+unreadToggle();

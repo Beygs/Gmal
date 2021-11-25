@@ -8,6 +8,8 @@
 
 require 'faker'
 
+Email.destroy_all
+
 10.times do
   Email.create(
     object: Faker::Beer.brand,

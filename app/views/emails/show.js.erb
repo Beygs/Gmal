@@ -1,3 +1,7 @@
 document
   .querySelector('.email-viewer')
   .innerHTML = "<%= j render partial: 'email_viewer', locals: { email: @email } %>";
+document
+  .querySelector("a.email__object[href='/emails/<%= @email.id %>']")
+  .parentNode
+  .classList.add('read');

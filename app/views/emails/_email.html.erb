@@ -1,4 +1,4 @@
-<div class='email'>
+<div class='<%= "email #{email.read ? 'read' : ''}" %>'>
   <%= link_to(
     email.object,
     email_path(email),

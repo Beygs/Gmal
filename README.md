@@ -17,5 +17,5 @@ Aïe...
 - [x] Création de mail
 - [x] Affichage de mail
 - [x] Suppression de mail
-- [ ] Email lu / non-lu
+- [x] Email lu / non-lu
 - [ ] Niveau ultime
