@@ -16,6 +16,6 @@ Aïe...
   - [ ] CSS
 - [x] Création de mail
 - [x] Affichage de mail
-- [ ] Suppression de mail
+- [x] Suppression de mail
 - [ ] Email lu / non-lu
 - [ ] Niveau ultime

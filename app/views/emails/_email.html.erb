@@ -1,9 +1,9 @@
 <div class='email'>
-  <p class='email__object'><%= email.object %></p>
   <%= link_to(
-    email.body,
+    email.object,
     email_path(email),
     remote: true,
-    class: 'email__body'
+    class: 'email__object'
   ) %>
+  <p class='email__body'><%= email.body %></p>
 </div>

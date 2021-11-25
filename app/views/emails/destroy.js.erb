@@ -1,0 +1,9 @@
+document
+  .querySelector("a.email__object[href='/emails/<%= @email.id %>']")
+  .parentNode
+  .remove();
+document
+  .querySelector(".btn--delete[href='/emails/<%= @email.id %>']")
+  .parentNode
+  .parentNode
+  .remove();
