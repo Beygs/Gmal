@@ -1,4 +1,6 @@
 class EmailsController < ApplicationController
+  protect_from_forgery except: [:inde, :show]
+  
   def index
     @emails = Email.all
   end
@@ -21,9 +23,11 @@ class EmailsController < ApplicationController
     @email = Email.find(params[:id])
     @email.update_attribute(:read, true)
 
+    puts @email
+
     respond_to do |format|
-      format.html { redirect_to email_path(@email) }
       format.js
+      format.html { redirect_to email_path(@email) }
     end
   end
 

@@ -18,4 +18,4 @@ Aïe...
 - [x] Affichage de mail
 - [x] Suppression de mail
 - [x] Email lu / non-lu
-- [ ] Niveau ultime
+- [x] Niveau ultime

