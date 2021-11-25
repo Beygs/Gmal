@@ -13,7 +13,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to emails_path }
-      format.js { }
+      format.js
     end
   end
 
@@ -23,7 +23,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to email_path(@email) }
-      format.js { }
+      format.js
     end
   end
 
@@ -33,7 +33,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to emails_path }
-      format.js { }
+      format.js
     end
   end
 
@@ -47,7 +47,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to emails_path }
-      format.js { }
+      format.js
     end
   end
 end

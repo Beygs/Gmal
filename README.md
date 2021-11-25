@@ -13,7 +13,7 @@ Aïe...
 - [x] Initialisation du projet (db & push heroku)
 - View Index des mails
   - [x] Html
-  - [ ] CSS
+  - [x] CSS
 - [x] Création de mail
 - [x] Affichage de mail
 - [x] Suppression de mail

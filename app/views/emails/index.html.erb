@@ -1,5 +1,6 @@
-<div class='container'>
-  <div class='actions'>
+<header class='header'>
+  <h1 class='header__title'>GMal</h1>
+  <div class='header__actions'>
     <%= form_with(
       url: emails_path,
       method: :post
@@ -7,16 +8,18 @@
       <%= form.submit 'Recevoir un email' %>
     <% end %>
   </div>
-  <div class='email-list'>
-    <% @emails.each do |email| %>
-      <%= render(
-        partial: 'email',
-        locals: { email: email },
-        remote: true
-      ) %>
-    <% end %>
-  </div>
-  <div class='email-viewer'>
-
-  </div>
+</header>
+<div class='email-list'>
+  <% @emails.sort_by { |e| e.id }.reverse.each do |email| %>
+    <%= render(
+      partial: 'email',
+      locals: { email: email },
+      remote: true
+    ) %>
+  <% end %>
 </div>
+<div class='email-viewer'>
+
+</div>
+
+<%= javascript_include_tag 'emails.js' %>

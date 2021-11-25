@@ -1,0 +1,33 @@
+.email-list {
+  overflow: auto;
+  margin-bottom: 30vh;
+
+  .email {
+    display: flex;
+    margin: 0 1rem;
+    border-bottom: 1px solid $timberwolf;
+    padding: 1em 0;
+    font-weight: bold;
+    height: 100%;
+
+    &__object {
+      width: 10em;
+      margin-right: 1em;
+    }
+
+    &__object,
+    &__body {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &.read {
+      font-weight: normal;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, .1) 0px 20px 20px -20px;
+    }
+  }
+}
